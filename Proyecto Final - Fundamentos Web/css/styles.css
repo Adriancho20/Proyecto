@@ -1,0 +1,689 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.body1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.body2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.body3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------VISTA 1-----------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/* Establece el margen y el relleno a 0 para toda la página y define un fondo con un degradado */
+.body1{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background: #0F2027;  
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+}
+
+/* Establece la altura mínima y la alineación del contenido dentro del encabezado */
+.headerVista1{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;  
+}
+
+/* Estilo para el menú de navegación, con su posición y alineación */
+.menu{
+    position: absolute;
+    top: 0;
+    left: -300px;
+    right: -300px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #000000;
+}
+
+/* Estilo para los elementos de la lista de navegación dentro del menú */
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+/* Estilo para los enlaces dentro del menú de navegación */
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: flex;
+    font-weight: 600px;
+}
+
+/* Estilo para los enlaces cuando se pasa el cursor sobre ellos */
+.menu .navbar ul li a:hover{
+    color: #CE967b;
+}
+
+/* Estilo para el texto dentro de la vista */
+.text-vista1{
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo para los encabezados de nivel 1 dentro de la vista */
+.h1-vista1{
+    color: aqua;
+    font-size: 60px;
+    text-align: center;    
+}
+
+/* Estilo para los párrafos dentro de la vista */
+.p1-vista1{
+    margin-top: 200px;
+    padding-left: 400px;
+    padding-right: 400px;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+}
+
+/* Estilo para la sección principal de la vista */
+.mainVista1{  
+    justify-content:space-around;
+    padding-top:  30px; 
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+    height: 100vh; 
+}
+
+/* Estilo para el video de fondo */
+#videoFondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+/* Estilo para los encabezados de nivel 3 */
+h3{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(40, 150, 240);
+}
+
+/* Estilo para la sección de captura de datos en la vista 1 */
+.CapturaDatos1seccion-vista1{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;  
+    padding: 10px;
+    font-weight: 700;
+}
+
+/* Estilo para cada sección de captura de datos */
+.CapturaDatos-vista1{
+    padding: 20PX;
+    right: 100px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(15, 216, 216);
+}
+
+/* Estilo para el selector de categoría */
+.Categoria{
+    padding: 10px 70px;
+    font-size: 20px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 7px;
+}
+
+/* Estilo para el selector de imagen */
+.selectorImg{
+    padding: 10px 140px;
+    font-size: 20px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 7px;
+}
+
+/* Estilo para el selector de lujo */
+.SelectorLujo{
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 7px;
+}
+
+/* Estilo para el selector de rango de velocidad */
+.SelectorRangoVelocidad{
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 7px;
+}
+
+/* Estilo para el selector de comodidad */
+.SelectorComodidad{
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 7px;
+}
+
+/* Estilo para los inputs de captura de datos */
+.CapturaDatos{
+    padding: 10px 70px;
+    font-size: 20px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 7px;
+}
+
+/* Estilo para la segunda sección de captura de datos en la vista 1 */
+.CapturaDatos2seccion-vista1{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px 250px;
+    padding: 10px;
+    font-weight: 700;
+}
+
+/* Estilo para la sección de captura de atributos en la vista 1 */
+.CapturaAtributos-vista1{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+}
+
+/* Estilo para el selector de lujo */
+.SelectorLujo{
+    padding: 10px 70px;
+    font-size: 20px;
+}
+
+/* Estilo para el selector de rango de velocidad */
+.SelectorRangoVelocidad{
+    padding: 10px 70px;
+    font-size: 20px;
+}
+
+/* Estilo para el selector de comodidad */
+.SelectorComodidad{
+    padding: 10px 70px;
+    font-size: 20px;
+}
+
+/* Estilo para los botones en la vista 1 */
+.Botones-vista1{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 750px;
+    justify-content:space-between;
+    border-color: rgb(154, 149, 158);
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px; 
+    margin-top: 30px;
+}
+
+/* Estilo para cada botón */
+.botones{
+    padding: 10px 25px;
+    color: black;
+    font-weight: bold;
+    border-color: rgb(0, 0, 0);
+}
+
+/* Estilo para una línea punteada */
+.line {
+    border: 0;
+    border-top: 1px dotted #ccc;
+}
+
+/* Estilo para la sección de descarga de imágenes en la vista 1 */
+.img-descarga-vista1{
+    display: flex;
+    padding-top:  10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: rgb(131, 131, 131);
+    background-color: #000000;
+}
+
+/* Estilo para los encabezados de nivel 4 */
+h4{
+    color: white;
+    font-size: 30px;
+}
+
+/* Estilo para el texto de contacto en la vista 1 */
+.text-contacto-vista1{
+    padding-left:  80px;
+    padding-right:  80px;
+    font-size: 25px;
+    padding-bottom: 60px;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------VISTA 2-----------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Establece una imagen de fondo con un degradado y otros ajustes para el cuerpo de la vista 2 */
+.body2{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.3)), url(https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?cs=srgb&dl=pexels-albinberlin-919073.jpg&fm=jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* Estilo para el encabezado de la vista 2 */
+.headerVista2{
+    display: flex;
+}
+
+/* Estilo para el texto en la vista 2 */
+.text-vista2{
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo para los encabezados de nivel 1 en la vista 2 */
+.h1-vista2{
+    color: aqua;
+    font-size: 60px;
+    text-align: center;
+}
+
+/* Estilo para una sección de texto con un diseño de cuadrícula en la vista 2 */
+.text-vista2-1{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    padding-left: 50px;
+    width: 100%;
+    height: 54%;
+}
+
+/* Estilo para los párrafos en la vista 2 */
+.p1-vista2{
+    font-size: 25px;
+    text-align: center; 
+}
+
+/* Estilo para los encabezados de nivel 2 en la vista 2 */
+.h2-vista2{
+    padding-left: 100px;
+    font-size: 30px;
+    margin-bottom: 0px;
+    color: rgb(26, 132, 219);
+}
+
+/* Estilo para ciertos párrafos con bordes y relleno en la vista 2 */
+.p2-vista2{
+    width: 400px;
+    height: 80%;
+    font-size: 25px;
+    padding: 30px;
+    border-color: blueviolet;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px; 
+    font-weight: bold;  
+}
+
+/* Estilo para otros párrafos en la vista 2 */
+.p1-vista2-1{
+    font-size: 25px;
+    text-align: center;
+    margin-top:5px ;  
+}
+
+/* Estilo para la sección principal de la vista 2 */
+.mainvista2{
+    margin-top: -30px;
+    padding-top: 50px;
+    margin-left: 600px;
+    margin-right: 550px; 
+}
+
+/* Estilo para el texto en los párrafos de la vista 2 */
+.p3-vista2{
+    color: white;
+}
+
+/* Estilo para un ejemplo de registro en la vista 2 */
+.ejemplo-registro{
+    text-align: center;
+}
+
+/* Estilo para otros párrafos en la vista 2 */
+.p4-vista2{
+    color: white;
+}
+
+/* Estilo para el botón principal en la vista 2 */
+.btn-1{
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #007bff;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    border-style: solid;
+    border-color: black;
+}
+
+/* Estilo para los artículos en la vista 2 */
+.articlevista2{
+    color: white;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------VISTA 3-----------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Establece una imagen de fondo y otros ajustes para el cuerpo de la vista 3 */
+.body3{
+    margin: 0;
+    padding: 0;
+    background-image: url(https://img1.wallspic.com/crops/2/0/5/5/6/165502/165502-patron-azure-malla-morado-gris-3840x2160.png);   
+    background-position: top, center, bottom;
+    background-size: contain;
+}
+
+/* Estilo para los encabezados de nivel 1 en la vista 3 */
+.h1-vista3{
+    padding-left: 100px;
+    font-size: 30px;
+    margin-bottom: 0px;
+    color: rgb(26, 132, 219);
+    text-align: center;
+    font-size: 50px;
+}
+
+/* Estilo para el contenedor de las tarjetas con clases CSS */
+.contenedorTarjeta {
+    font-weight: bolder;  
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Estilo para el contenedor de las tarjetas con ID CSS */
+#contenedorTarjeta {
+    font-weight: bolder;  
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Estilo para las tarjetas dentro del contenedor */
+.contenedorTarjetas {
+    color: rgb(92, 161, 250);
+    border-style: solid;
+    border-color: rgb(68, 68, 68);
+    border-width: 10px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 30px 30px 10px 30px;
+}
+
+/* Estilo para las imágenes dentro de las tarjetas */
+.contenedorTarjetas img {
+    width: 390px; 
+}
+
+/* Estilo para las imágenes con la clase "imgtargetas" */
+.imgtargetas{
+    border-radius: 15%; 
+}
+
+/* Contenedor de paginación */
+.paginacion {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    list-style: none; /* Elimina el estilo de lista */
+    padding: 0; 
+    margin: 30px;
+}
+
+/* Estilo general para botones y span en la paginación */
+.paginacion > * {
+    margin: 0 5px; 
+    padding: 10px 15px; 
+    text-decoration: none; /* Elimina la decoración de texto */
+    color: #548cf3; 
+    border: 2px solid #333; 
+    border-radius: 5px; 
+    background: transparent; 
+    cursor: pointer; /* Cursor en forma de puntero */
+    transition: all 0.3s ease; /* Transición suave para efectos */
+    font-size: 20px;
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para botones al pasar el mouse */
+.paginacion > button:hover {
+    background-color: #8d8d8d; /* Fondo oscuro al pasar el mouse */
+    color: rgb(0, 238, 255); /* Texto blanco al pasar el mouse */
+}
+
+/* Estilo para el span de la página actual */
+#paginaActual {
+    font-weight: bold; /* Texto en negrita */
+    cursor: default; 
+    font-size: 40px;
+}
+
+/* Estilos para botones desactivados (si es necesario) */
+.paginacion > button:disabled {
+    background-color: #ccc; 
+    color: #666; 
+    cursor: not-allowed; 
+    border-color: #ccc; 
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------VISTA 4-----------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Establece el estilo básico para el cuerpo de la vista 4 */
+.body4{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #434343, #000000);  
+    background: linear-gradient(to right, #434343, #000000); 
+}
+
+/* Estilo para el encabezado en la vista 4 */
+.header4 {
+    margin: 0;
+    padding: 0;
+    color: aqua;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilo para la lista de botones */
+.botonesul{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+/* Estilo para la navegación en la vista 4 */
+.nav4{
+    border: solid;
+    border-color: rgb(253, 253, 253);
+    border-width: 10px;
+    padding: 10px;
+    margin: 20px;
+    margin-inline: 600px;
+    text-align: center;
+}
+
+/* Estilo para los encabezados de nivel 1 en la vista 4 */
+.h1-vista4 {
+    margin: 10px;
+}
+
+/* Estilo para los encabezados de nivel 2 en la vista 4 */
+.h2-vista4{
+    margin-top: 40px;
+    color: white;
+}
+
+/* Estilo para la sección de captura de datos en la vista 4 */
+.CapturaDatos-vista4{
+    margin: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilo para los botones en la vista 4 */
+.botonesvista4, .botonesvistalim4{
+    padding: 10px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para los botones al pasar el mouse */
+.boton:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para la tabla */
+#table {
+    width: 80%; 
+    margin: auto; /* Añade un margen superior de 20px y centra la tabla horizontalmente con márgenes automáticos a los lados. */
+    border-collapse: collapse; /* Elimina el espacio entre las celdas de la tabla. */
+}
+
+/* Estilo para la primera fila de la tabla */
+#table tr:nth-child(1) {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Estilo para las filas impares (excepto la primera) de la tabla */
+#table tr:nth-child(odd):not(:first-child) {
+    background-color: #dcdcdc; 
+}
+
+/* Estilo para las filas pares de la tabla */
+#table tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+/* Estilo para las filas al pasar el mouse */
+#table tr:not(:first-child):hover {
+    background-color: #b8b6b6; 
+}
+
+/* Estilo para las celdas de la tabla */
+#table td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilo para los encabezados de la tabla */
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilo para el texto de carga */
+#loading{
+    color: white;
+}
+
+/* Estilo para el botón de redirección */
+.boton-redireccion {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Estilo para el botón de redirección al pasar el mouse */
+.boton-redireccion:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para la imagen del carro */
+.imagenCarro {
+    transition: transform 0.9s; /* Suaviza la transición */
+    width: 50px; /* Ancho inicial */
+    border-radius: 15%;
+}
+  
+/* Estilo para la imagen del carro al pasar el mouse */
+.imagenCarro:hover {
+    transform: scale(5.0); 
+    border-radius: 15%; 
+}
+
+
+
+
+

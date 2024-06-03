@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://app.embed.im/snow.js"></script>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <title>CarHireHub</title>
+</head>
+
+<body class="body1">
+
+    <header class="headerVista1">
+
+        <nav class="menu container">
+
+
+            <label for="menu">
+                <img width="50px" src="img/menu.png" class="menu-icono" alt="">
+            </label>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Ventas</a></li>
+                    <li><a href="#">+Servicios</a></li>
+                    <li><a href="#">Vehiculos</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                </ul>              
+            </div>
+        </nav>
+
+        <section class="text-vista1">   
+            <h1 class="h1-vista1">CarHireHub</h1>     
+            <p class="p1-vista1">
+                CarHireHub es una pagina confiable para alquilar vehículos de manera rápida y sencilla.<br/> Nuestra plataforma centraliza una amplia variedad de opciones, como el registro de vehículos, por:<br/><br/>1: Nombre<br/>2: Categoria<br/>3: Imagen<br/>4: Codigo<br/>5: Precio<br/>6: Exclusividad<br/>7: Velocidad<br/>8: Comodidad<br/><br/> ¡Estamos aquí para ayudarte!<br/><br/>
+            </p>          
+        </section>
+
+    </header>
+
+    
+    <main class="mainVista1">
+
+
+        <video autoplay loop muted id="videoFondo">
+            <source src="img/videofondo.mp4" type="video/mp4">
+        </video>
+
+        <h3>Registro</h3>
+        <form class="CapturaDatos1seccion-vista1">
+            <section class="CapturaDatos-vista1">
+                <label>Campo Nombre</label><br/>
+                <input class="CapturaDatos" id="Nombre" pattern="[a-zA-Z0-9 ]{1,20}" title="Introduce máximo 20 letras"/><br/><br/>
+            </section>
+
+            <section class="CapturaDatos-vista1">
+                <label>Selector de categoria</label><br/>
+                <select class="Categoria" title="Seleccione una opcion">
+                    <option value="En blanco"></option>
+                    <option value="Deportivos">Deportivos</option>
+                    <option value="Minivan">Minivan</option>
+                    <option value="SUVs">SUVs</option>
+                    <option value="Limusina">Limusina</option>
+                    <option value="Camionetas">Camionetas</option>
+                    <option value="Sedanes">Sedanes</option>
+                </select>
+            </section>
+
+            <section class="CapturaDatos-vista1">
+                <label>Selector de Imagen</label><br/>
+                <select class="selectorImg" title="Seleccione una opcion">
+                    <option value="En blanco"></option>
+                    <option data-img-src="https://www.elcarrocolombiano.com/wp-content/uploads/2016/08/20160819-MERCEDES-MAYBACH-VISION-01A.jpg" value="imagen">Maybach 6</option>
+                    <option data-img-src="https://www.purosautos.com/wp-content/uploads/2020/07/9-maserati-mc20-render-2020-static-front.jpg" value="imagen">Maserati</option>
+                    <option data-img-src="https://www.elcarrocolombiano.com/wp-content/uploads/2017/09/20170907-BENTLEY-CONTINENTAL-GT-2018-01.jpg" value="imagen">Bentley GT </option>
+                    <option data-img-src="https://hips.hearstapps.com/hmg-prod/images/tm4tb-65c9d2dfc83ab.jpg?crop=0.8333333333333334xw:1xh;center,top&resize=1200:*" value="imagen">Aston Martin F1 </option>
+                    <option data-img-src="https://acnews.blob.core.windows.net/imgnews/large/NAZ_1e3644a2138f460c80490263294d5564.jpg" value="imagen">McLaren F1 </option>
+                    <option data-img-src="https://hips.hearstapps.com/hmg-prod/images/gt4-rs-06-1637137843.jpg?crop=1xw:1xh;center,top&resize=980:*" value="imagen">Porsche 718 Cayman </option>
+                    <option data-img-src="https://www.carroya.com/noticias/sites/default/files/entradillas/13494297jaguarf-type-opt.jpg" value="imagen">Jaguar F-Type coupe </option>
+                    <option data-img-src="https://acroadtrip.blob.core.windows.net/catalogo-imagenes/m/RT_V_c2f2f6c396384bb1a1a9610b2260b0f3.jpg" value="imagen">Mitsubishi </option>
+                    <option data-img-src="https://loscoches.com/wp-content/uploads/2021/06/02-Can-Am-Maverick-X3-Los-Coches.jpg" value="imagen">CAN-AM maverick X3 </option>
+                    <option data-img-src="https://i.pinimg.com/originals/00/e8/0f/00e80ffc0377dece79d1c486b9c85266.jpg" value="imagen">Sand Racer</option>
+                </select>
+            </section>
+        </form>
+
+        <form class="CapturaDatos2seccion-vista1">
+            <section class="CapturaDatos-vista1">
+                <label>Codigo del Producto</label><br/>
+                <input class="CapturaDatos" pattern="[a-zA-Z0-9]+" title="Minimo 8 caracteres entre numeros y letras. -1 minuscula. -1 mayuscula. -2 numeros" id="Codigo"/><br/><br/>
+            </section>
+
+            <section class="CapturaDatos-vista1">
+                <label>Campo Precio</label><br/>
+                <input class="CapturaDatos" id="Precio" title="Introduce el precio en pesos"/><br/><br/><br/>
+            </section>
+        </form>
+
+
+        <form class="CapturaAtributos-vista1">
+            <section class="CapturaDatos-vista1">
+                <label>Nivel de Lujo</label><br/>
+                <select class="SelectorLujo" title="Seleccione una opcion">
+                    <option value="En blanco"></option>
+                    <option value="Bajo">Bajo</option>
+                    <option value="Moderado">Moderado</option>
+                    <option value="Exclusivo">Exclusivo</option>
+                </select><br><br>
+            </section>
+
+            <section class="CapturaDatos-vista1">
+                <label>Rangos de Velocidad</label><br/>
+                <select class="SelectorRangoVelocidad" title="Seleccione una opcion">
+                    <option value="En blanco"></option>
+                    <option value="(0 - 150)">Velocidad = (0 - 150)</option>
+                    <option value="(150 - 250)">Velocidad = (150 - 250)</option>
+                    <option value="(250 - 350++)">Velocidad = (250 - 350++)</option>
+                </select><br><br>
+            </section>
+
+            <section class="CapturaDatos-vista1">
+                <label>Nivel de Comodidad</label><br/>
+                <select class="SelectorComodidad" title="Seleccione una opcion">
+                    <option value="En blanco"></option>
+                    <option value="Bajo">Bajo</option>
+                    <option value="Moderado">Moderado</option>
+                    <option value="Alto">Alto</option>
+                </select><br><br>
+            </section>
+        </form>
+
+        <footer class="Botones-vista1">
+            <button class="botones" onclick="registroProducto()">Registro</button>
+            <button class="botones" onclick="limpiarInputs()">Limpiar</button>
+        </footer>
+
+        
+    </main>
+
+    <footer class="img-descarga-vista1">
+        <img width="400px" src="img/LOGO.png" >
+        <img width="400px" src="https://i.ytimg.com/vi/lySRx75rsoo/maxresdefault.jpg">
+            <article class="text-contacto-vista1">
+                <h4> Donde nos encuentras? </h4>
+
+                <P>
+                    CarHireHub S.A.S. Cali, Valle del Cauca Dirección Havenida SiempreViva 742 - Henderson, Nevada. 
+                    Datos de contacto: Teléfonos: 01 8000 12345 6; (602) 5550011
+                    Correo electrónico: reservas@CarHireHub.com - atencioncliente@CarHireHub.com 
+                </P>
+            </article>
+    </footer>
+
+    <script src="./js/registro.js" type="text/javascript"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
